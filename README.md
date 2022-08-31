@@ -6,7 +6,7 @@
 
 Для выполнения тестового задания вам понадобится репозиторий [dream](https://github.com/deepmipt/dream). 
 
-Добавьте в [docker-compose.yml](https://github.com/deepmipt/dream/blob/dev/docker-compose.yml) сервис, который получает данные любым удобным вам способом (как Telegram-бот, из брокера сообщений, через сокеты или любым другим) и асинхронно отправляет запрос с этими данными любой из сервисов:
+Добавьте в [docker-compose.yml](https://github.com/deepmipt/dream/blob/dev/docker-compose.yml) сервис, который получает данные любым удобным вам способом (как Telegram-бот, из брокера сообщений, через сокеты или любым другим) и асинхронно отправляет запрос с этими данными в любой из сервисов:
 
 - [Knowledge Grounding Service](https://github.com/deepmipt/dream/tree/dev/services/knowledge_grounding);
 - [Topic Recommendation](https://github.com/deepmipt/dream/tree/dev/annotators/topic_recommendation).
