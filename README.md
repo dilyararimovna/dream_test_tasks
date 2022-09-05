@@ -2,6 +2,8 @@
 
 ## Задание для Software Engineer 
 
+Вопросы можете задавать в Telegram `ignatovf`.
+
 ### Задание 1
 
 Для выполнения тестового задания вам понадобится репозиторий [dream](https://github.com/deeppavlovteam/dream). 
@@ -23,7 +25,7 @@ docker-compose -f docker-compose.yml -f assistant_dists/dream/docker-compose.ove
 
 Директорию с исходным кодом и докерфайлом вашего сервиса поместите в корень репозитория. Параметры (такие как токены и т.п.) сервис должен брать из [.env](https://github.com/deeppavlovteam/dream/blob/dev/.env) файла. Значения добавленных вами в .env переменных следует оставить пустыми, указав лишь в README.md сервиса их назначение.
 
-При проверке задания написанные вами сервисы будут запускаться с помощью docker-compose (файл [docker-compose.yml](https://github.com/deeppavlovteam/dream/blob/dev/docker-compose.yml)).
+При проверке задания написанные вами сервисы будут запускаться с помощью docker-compose (свой сервис и БД добавьте в файл [docker-compose.yml](https://github.com/deeppavlovteam/dream/blob/dev/docker-compose.yml)).
 
 ### Задание 2 (опциональное)
 
