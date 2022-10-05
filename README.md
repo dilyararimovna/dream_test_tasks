@@ -6,12 +6,12 @@
 
 ### Задание 1
 
-Для выполнения тестового задания вам понадобится репозиторий [dream](https://github.com/deeppavlovteam/dream). 
+Для выполнения тестового задания вам понадобится репозиторий [dream](https://github.com/deeppavlov/dream). 
 
-Добавьте в [docker-compose.yml](https://github.com/deeppavlovteam/dream/blob/dev/docker-compose.yml) сервис, который получает данные любым удобным вам способом (как Telegram-бот, из брокера сообщений, через сокеты или любым другим) и асинхронно отправляет запрос с этими данными на любой из сервисов:
+Добавьте в [docker-compose.yml](https://github.com/deeppavlov/dream/blob/dev/docker-compose.yml) сервис, который получает данные любым удобным вам способом (как Telegram-бот, из брокера сообщений, через сокеты или любым другим) и асинхронно отправляет запрос с этими данными на любой из сервисов:
 
-- [badlisted-words](https://github.com/deeppavlovteam/dream/tree/main/annotators/BadlistedWordsDetector);
-- [spacy-nounphrases](https://github.com/deeppavlovteam/dream/tree/main/annotators/spacy_annotator).
+- [badlisted-words](https://github.com/deeppavlov/dream/tree/main/annotators/BadlistedWordsDetector);
+- [spacy-nounphrases](https://github.com/deeppavlov/dream/tree/main/annotators/spacy_annotator).
 
 Оба сервиса можно запустить, выполнив команду:
 
@@ -23,13 +23,13 @@ docker-compose -f docker-compose.yml -f assistant_dists/dream/docker-compose.ove
 
 Запрос и ответ сервиса должны сохраняться в базу данных (тип БД и формат хранения можете использовать любые).
 
-Директорию с исходным кодом и докерфайлом вашего сервиса поместите в корень репозитория. Параметры (такие как токены и т.п.) сервис должен брать из [.env](https://github.com/deeppavlovteam/dream/blob/dev/.env) файла. Значения добавленных вами в .env переменных следует оставить пустыми, указав лишь в README.md сервиса их назначение.
+Директорию с исходным кодом и докерфайлом вашего сервиса поместите в корень репозитория. Параметры (такие как токены и т.п.) сервис должен брать из [.env](https://github.com/deeppavlov/dream/blob/dev/.env) файла. Значения добавленных вами в .env переменных следует оставить пустыми, указав лишь в README.md сервиса их назначение.
 
-При проверке задания написанные вами сервисы будут запускаться с помощью docker-compose (свой сервис и БД добавьте в файл [docker-compose.yml](https://github.com/deeppavlovteam/dream/blob/dev/docker-compose.yml)).
+При проверке задания написанные вами сервисы будут запускаться с помощью docker-compose (свой сервис и БД добавьте в файл [docker-compose.yml](https://github.com/deeppavlov/dream/blob/dev/docker-compose.yml)).
 
 ### Задание 2 (опциональное)
 
-Выполните рефакторинг [Knowledge Grounding Service](https://github.com/deeppavlovteam/dream/tree/dev/services/knowledge_grounding) или [Topic Recommendation](https://github.com/deeppavlovteam/dream/tree/dev/annotators/topic_recommendation). Рефакторинг может включать в себя:
+Выполните рефакторинг [Knowledge Grounding Service](https://github.com/deeppavlov/dream/tree/dev/services/knowledge_grounding) или [Topic Recommendation](https://github.com/deeppavlov/dream/tree/dev/annotators/topic_recommendation). Рефакторинг может включать в себя:
 
 - Замену Flask на FastAPI, использование Pydantic при работе с пэйлоадом.
 - Использование модуля `unittest` для тестов.
