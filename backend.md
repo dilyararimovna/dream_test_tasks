@@ -28,3 +28,5 @@ docker compose -f docker-compose.yml -f assistant_dists/dream_script_based/docke
 
 При проверке задания написанные вами сервисы будут запускаться с помощью docker-compose
 (свой сервис и БД добавьте в файл [docker-compose.yml](https://github.com/deeppavlov/dream/blob/main/docker-compose.yml)).
+
+Решение тестового задания принимается в виде ссылки на форк репозитория [dream](https://github.com/deeppavlov/dream).
