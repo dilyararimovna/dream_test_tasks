@@ -4,7 +4,7 @@
 
 Добавьте в [docker-compose.yml](https://github.com/deeppavlov/dream/blob/main/docker-compose.yml) сервис,
 который получает данные любым удобным вам способом (как Telegram-бот, из брокера сообщений, через сокеты или любым другим)
-и асинхронно отправляет запрос с этими данными на один из следующих сервисов:
+и асинхронно (используя асинхронный клиент) отправляет запрос с этими данными на один из следующих сервисов:
 
 - [badlisted-words](https://github.com/deeppavlov/dream/tree/main/annotators/BadlistedWordsDetector);
 - [spacy-nounphrases](https://github.com/deeppavlov/dream/tree/main/annotators/spacy_annotator).
